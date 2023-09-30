@@ -1,0 +1,100 @@
+/* App.css */
+
+.contrast-checker-box {
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #f5f7fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.color-picker-section {
+    display: flex;
+    align-items: center;
+}
+
+.color-picker-section label {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.color-picker-section input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e4e7ed;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.color-picker-section input[type="color"]:hover {
+    border-color: #6200ea;
+}
+
+.color-picker-section input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color-picker-section input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.contrast-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contrast-ratio,
+.contrast-status,
+.contrast-rating {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.contrast-ratio:hover,
+.contrast-status:hover,
+.contrast-rating:hover {
+    transform: translateY(-5px);
+}
+
+.contrast-ratio span,
+.contrast-status span {
+    font-weight: 600;
+    margin-left: 0.5rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.contrast-rating span {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+
+
